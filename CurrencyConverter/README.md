@@ -4,7 +4,7 @@ This is a simple Angular-based **Currency Converter** application that allows us
 
 ---
 
-## 🚀 Features
+## Features
 
 - Select a **"From Currency"** and **"To Currency"**
 - Enter the **amount** to convert
@@ -14,7 +14,7 @@ This is a simple Angular-based **Currency Converter** application that allows us
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - [Angular 13+](https://angular.io/)
 - [Bootstrap 5](https://getbootstrap.com/)
@@ -23,9 +23,9 @@ This is a simple Angular-based **Currency Converter** application that allows us
 
 ---
 
-## 📦 Setup & Run
+## Setup & Run
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/mdreza1472/currency-converter-angular.git
-   cd currency-converter-angular
+   git clone https://github.com/mdreza1472/angular-learnings.git
+   cd CurrencyConverter
