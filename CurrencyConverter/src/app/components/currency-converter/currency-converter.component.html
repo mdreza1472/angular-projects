@@ -1,0 +1,71 @@
+<div class="container mt-5">
+    <h3 class="mb-4 text-center text-primary">Currency Converter</h3>
+  
+    <form (ngSubmit)="onFormSubmit(frm)" #frm="ngForm" class="p-4 border rounded shadow-sm bg-light">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="fromAmount" class="form-label">From Amount:</label>
+          <input
+            type="number"
+            name="fromAmount"
+            ngModel
+            required
+            #fromAmount="ngModel"
+            class="form-control"
+            placeholder="Enter amount"
+          />
+        </div>
+  
+        <div class="col-md-6">
+          <label for="fromCurrency" class="form-label">From Currency:</label>
+          <select
+            name="fromCurrency"
+            [(ngModel)]="fromCurrency"
+            class="form-select"
+          >
+            <option value="AUD" selected>AUD</option>
+            <option value="AED">AED</option>
+            <option value="USD">USD</option>
+          </select>
+        </div>
+  
+        <div class="col-md-6">
+          <label for="toAmount" class="form-label">To Amount:</label>
+          <input
+            type="text"
+            name="toAmount"
+            ngModel
+            readonly
+            #toAmount="ngModel"
+            class="form-control"
+            placeholder="Converted value"
+          />
+        </div>
+  
+        <div class="col-md-6">
+          <label for="toCurrency" class="form-label">To Currency:</label>
+          <select
+            ngModel
+            name="toCurrency"
+            #toCurrency="ngModel"
+            class="form-select"
+          >
+            <option value="">Please select:</option>
+            <option
+              *ngFor="let currency of toCurrencies"
+              [value]="currency.rate"
+            >
+              {{ currency.currencyName }} - {{ currency.rate }}
+            </option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary px-4">
+          Convert
+        </button>
+      </div>
+    </form>
+  </div>
+  
