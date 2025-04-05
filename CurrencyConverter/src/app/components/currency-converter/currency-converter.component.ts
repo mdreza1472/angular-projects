@@ -61,4 +61,25 @@ export class CurrencyConverterComponent implements OnInit, AfterViewInit {
     frm.controls['toAmount'].setValue(convertedValue);
   }
 
+  allowOnlyNumbers(event: KeyboardEvent): boolean {
+    const allowedKeys = /[0-9.]/
+    const inputChar = event.key;
+  
+    // Allow digits and one decimal point only
+    if (!allowedKeys.test(inputChar)) {
+      event.preventDefault();
+      return false;
+    }
+  
+    // Prevent more than one decimal point
+    const inputElement = event.target as HTMLInputElement;
+    if (inputChar === '.' && inputElement.value.includes('.')) {
+      event.preventDefault();
+      return false;
+    }
+  
+    return true;
+  }
+  
+
 }
