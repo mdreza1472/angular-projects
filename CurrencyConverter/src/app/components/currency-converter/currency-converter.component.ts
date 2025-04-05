@@ -23,7 +23,8 @@ export class CurrencyConverterComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
+    setTimeout(() => {//to read control values in template driven approach use setTimeout
+      //or two way data binding
       console.log(this.frm);
       console.log(this.frm.form.controls.fromCurrency);//workaround to read control using template driven approach
       console.log(this.frm.form.controls.fromCurrency.value);
