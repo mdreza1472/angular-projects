@@ -1,4 +1,4 @@
-# 💱 Currency Converter (Angular)
+# Currency Converter (Angular)
 
 This is a simple Angular-based **Currency Converter** application that allows users to convert an amount from one currency to another using exchange rates fetched from a URL
 
