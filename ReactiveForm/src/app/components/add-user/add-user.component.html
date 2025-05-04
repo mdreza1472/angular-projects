@@ -36,7 +36,9 @@
             type="radio" 
             [value]="gender" 
             formControlName="gender" 
-            [id]="gender">
+            [id]="gender"
+            (change)="radioButtonSelected($event)"
+            >
           <label class="form-check-label" [for]="gender">{{ gender }}</label>
         </div>
       </div>

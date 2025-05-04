@@ -38,4 +38,8 @@ export class AddUserComponent implements OnInit {
     }
   }
 
+  radioButtonSelected (event: Event) {
+    console.log(event);
+  }
+
 }
