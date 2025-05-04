@@ -1,0 +1,51 @@
+<div class="row g-3">
+    <form [formGroup]="frm" (ngSubmit)="submit()" class="row g-3">
+      
+      <div class="col-md-4">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" class="form-control" type="text" formControlName="name">
+        <div *ngIf="frm.controls['name'].hasError('required')" class="text-danger mt-1">
+          Please enter value
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <label for="age" class="form-label">Age</label>
+        <input id="age" class="form-control" type="number" formControlName="age">
+      </div>
+  
+      <div class="col-md-4">
+        <label for="address" class="form-label">Address</label>
+        <input id="address" class="form-control" type="text" formControlName="address">
+      </div>
+  
+      <div class="col-md-4">
+        <label for="country" class="form-label">Select Country</label>
+        <select id="country" formControlName="country" class="form-select">
+          <option *ngFor="let country of countries" [value]="country">
+            {{ country }}
+          </option>
+        </select>
+      </div>
+  
+      <div class="col-md-4">
+        <label class="form-label d-block">Select Gender</label>
+        <div class="form-check form-check-inline" *ngFor="let gender of genders">
+          <input 
+            class="form-check-input" 
+            type="radio" 
+            [value]="gender" 
+            formControlName="gender" 
+            [id]="gender">
+          <label class="form-check-label" [for]="gender">{{ gender }}</label>
+        </div>
+      </div>
+  
+      <div class="col-12 d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      
+  
+    </form>
+  </div>
+  
