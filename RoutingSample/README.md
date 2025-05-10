@@ -69,7 +69,7 @@ This directive restricts user input to only alphabets (A-Z, a-z).
 
 ---
 
-## 🧼 Form Validation
+## Form Validation
 
 * Required fields
 * Alphabet-only restriction using custom directive
