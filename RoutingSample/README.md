@@ -125,9 +125,4 @@ This project is licensed under the MIT License.
 
 ## 👤 Author
 
-Built with ❤️ using Angular to demonstrate form handling and input validation.
-
-```
-
-Would you like me to help you add unit tests for the `appAlphabets` directive?
-```
+Mohammed Reza
