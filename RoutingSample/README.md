@@ -16,7 +16,7 @@ This Angular project demonstrates the use of both **Template-driven Forms** and 
 
 ---
 
-## ✨ Features
+## Features
 
 - ✅ Template-driven form
 - ✅ Reactive form using `FormGroup` and `FormControl`
@@ -25,31 +25,11 @@ This Angular project demonstrates the use of both **Template-driven Forms** and 
 - ✅ Form editing using route parameter
 - ✅ Angular routing setup
 
----
-
-## 🧱 Project Structure
-
-```
-
-src/
-├── app/
-│   ├── components/
-│   │   ├── template-driven/
-│   │   │   └── template-driven.component.ts/html
-│   │   ├── reactive-form/
-│   │   │   └── reactive-form.component.ts/html
-│   │   ├── list-employees/
-│   │   │   └── list-employees.component.ts/html
-│   ├── directives/
-│   │   └── alphabets.directive.ts
-│   ├── app-routing.module.ts
-│   └── app.module.ts
-
 ````
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -72,7 +52,7 @@ Open your browser at [http://localhost:4200](http://localhost:4200)
 
 ---
 
-## 🌐 Application Routes
+## Application Routes
 
 | Route                       | Component                 | Description                     |
 | --------------------------- | ------------------------- | ------------------------------- |
@@ -83,21 +63,9 @@ Open your browser at [http://localhost:4200](http://localhost:4200)
 
 ---
 
-## 🧪 Using the `appAlphabets` Directive
+## Using the `appAlphabets` Directive
 
 This directive restricts user input to only alphabets (A-Z, a-z).
-
-### Example (in template-driven form):
-
-```html
-<input name="name" [(ngModel)]="model.name" appAlphabets>
-```
-
-### Example (in reactive form):
-
-```html
-<input formControlName="name" appAlphabets>
-```
 
 ---
 
@@ -109,7 +77,7 @@ This directive restricts user input to only alphabets (A-Z, a-z).
 
 ---
 
-## 🛠 Build
+## Build
 
 ```bash
 ng build
@@ -117,12 +85,12 @@ ng build
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👤 Author
+## Author
 
 Mohammed Reza
