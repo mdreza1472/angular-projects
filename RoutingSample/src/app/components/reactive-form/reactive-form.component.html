@@ -1,0 +1,23 @@
+<div class="container"> 
+    <div class="row">
+        <form [formGroup]="fm" (ngSubmit)="onSubmit()" >
+            <div class="col-md-6 form-group">
+                <label for="">Name</label>
+                <input formControlName="name" id="name" type="text" required
+                appAlphabets
+                >
+            </div>
+            <div class="col-md-6">
+                <label for="">Age</label>
+                <input 
+                formControlName="age" 
+                id="age" 
+                type="text" 
+                required>
+            </div>
+            <div class="col-md-12">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

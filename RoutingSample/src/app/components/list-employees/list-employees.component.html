@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+
+        </th>
+    </tr>
+    <tr *ngFor="let emp of fetchedEmployees; let i=index">
+        <td>
+            {{emp?.name}}
+        </td>
+        <td>
+            {{emp?.age}}
+        </td>
+        <td>
+            <a [routerLink]="['/edit-template-form', emp?.name]" >Edit</a>
+        </td>
+    </tr>
+</table>
